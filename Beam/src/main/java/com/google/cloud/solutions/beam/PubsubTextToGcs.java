@@ -51,7 +51,7 @@ import org.joda.time.Duration;
  --experiments=shuffle_mode=service \
  --region=us-central1 \
  --jobName=pubsub-json-to-gcs-run3-1" \
- --file BeamAvro/pom.xml
+ --file Beam/pom.xml
 
  mvn clean generate-sources compile exec:java \
  -Dexec.mainClass=com.google.cloud.solutions.beam.PubsubTextToGcs \
@@ -69,7 +69,7 @@ import org.joda.time.Duration;
  --enableStreamingEngine \
  --experiments=shuffle_mode=service \
  --region=us-central1" \
- --file BeamAvro/pom.xml
+ --file Beam/pom.xml
 
 
 
@@ -94,7 +94,7 @@ import org.joda.time.Duration;
  --experiments=shuffle_mode=service \
  --region=us-central1 \
  --jobName=pubsub-csv-to-gcs-run5" \
- --file BeamAvro/pom.xml
+ --file Beam/pom.xml
 
 
  mvn clean generate-sources compile exec:java \
@@ -113,7 +113,7 @@ import org.joda.time.Duration;
  --enableStreamingEngine \
  --experiments=shuffle_mode=service \
  --region=us-central1" \
- --file BeamAvro/pom.xml
+ --file Beam/pom.xml
  */
 
 public class PubsubTextToGcs {

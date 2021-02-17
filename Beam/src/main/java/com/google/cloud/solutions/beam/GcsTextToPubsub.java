@@ -45,7 +45,7 @@ import org.joda.time.Duration;
  --maxNumWorkers=100 \
  --region=us-central1 \
  --jobName=gcs-csv-to-pubsub-run-1" \
- --file BeamAvro/pom.xml
+ --file Beam/pom.xml
 
 -------------- JSON ----------------
  mvn clean generate-sources compile exec:java \
@@ -63,7 +63,7 @@ import org.joda.time.Duration;
  --maxNumWorkers=40 \
  --region=us-central1 \
  --jobName=gcs-json-to-pubsub-run1-2" \
- --file BeamAvro/pom.xml
+ --file Beam/pom.xml
  */
 public class GcsTextToPubsub {
     private static final Duration DEFAULT_POLL_INTERVAL = Duration.standardSeconds(10);
